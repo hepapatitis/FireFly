@@ -42,6 +42,7 @@ body {
     font-weight: 300;
     font-size: 14px;
     line-height: 1.5;
+	padding-bottom:20px;
 }
 
 a { 
@@ -123,10 +124,10 @@ p {
 }
 
 .clock-section{
-	margin-right:3px;
+	margin-right:2px;
     float: left;
-    padding: 20px 40px;
-	background:rgba(0,0,0,0.5);
+    padding: 20px 30px;
+	background:rgba(0,0,0,0.6);
 	border-radius:10px;
 }
 
@@ -171,6 +172,7 @@ p {
     background: #262624;
     color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+	cursor:pointer;
 }
 
 #modal-close i{
@@ -201,6 +203,7 @@ p {
     top: 0;
     z-index: 997;
     background: #000;
+	background: rgba(0,0,0,0.85);
     display: none;
 }
 
@@ -286,6 +289,7 @@ p {
     width: 320px;
     padding: 0px 20px;
     background: #222;
+	background:rgba(0,0,0,0.55);
     border: none;
     color: #939898;
     font-size: 14px;
@@ -307,6 +311,7 @@ p {
 
 #newsletter input:hover, textarea:hover, select:hover {
 	background: #2a2a2a;
+	background:rgba(0,0,0,0.7);
 	color:#f5f5f5;
 }
 #newsletter input:focus, textarea:focus, select:focus { 
@@ -320,6 +325,7 @@ p {
     cursor: pointer; 
     border: none;
     background:#262624;
+	background:rgba(0,0,0,0.6);
     color:#fff; 
     -webkit-border-top-left-radius: 0px;
     -moz-border-radius-topleft: 0px;
@@ -338,6 +344,7 @@ p {
 
 #newsletter input.submit:hover { 
     background:#686e6e;
+    background:rgba(0,0,0,0.85);
 }
 
 #newsletter input[type="submit"][disabled] { 
@@ -432,7 +439,9 @@ p {
 /*----------------------------------------------------------------------------*/
 
 .body-bg {
-    background: rgba(15,15,15,0.85);
+    /*background: rgba(15,15,15,0.85);*/
+    background: url('../images/in-the-depths.jpg') center;
+	background-size:cover;
     height: 100%;
     left: 0;
     position: fixed;
@@ -440,6 +449,81 @@ p {
     width: 100%;
     z-index: -1;
 }
+
+.parallax-bg {
+    background: url('../images/in-the-depths/bg.png') center;
+	background-size:cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.parallax-layer1 {
+    background: url('../images/in-the-depths/layer1.png') center;
+	background-size:cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.parallax-layer2 {
+    background: url('../images/in-the-depths/layer2.png') center;
+	background-size:cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.parallax-layer3 {
+    background: url('../images/in-the-depths/layer3.png') center;
+	background-size:cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.scene,
+.layer {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.scene {
+  min-height: 460px;
+  position: fixed;
+  overflow: hidden;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+.layer {
+  position: absolute;
+}
+.layer div {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 
 /*----------------------------------------------------------------------------*/
 /*	10.	Responsive
@@ -493,7 +577,7 @@ p {
     }
 
     .clock-section{
-        padding: 20px 20px;
+        padding: 20px 13px;
     }
 
     .clock-section span{
@@ -505,15 +589,15 @@ p {
     }
 
     #newsletter fieldset{ 
-        width: 320px;
+        width: 285px;
     }
 
     #newsletter input, textarea, select { 
-        width: 180px;
+        width: 150px;
     }
 
     #newsletter input.submit { 
-        width: 100px;
+        width: 95px;
     }
 
     #modal .container {
