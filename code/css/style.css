@@ -450,8 +450,7 @@ p {
     z-index: -1;
 }
 
-.parallax-bg {
-    background: url('../images/in-the-depths/bg.png') center;
+.parallax-part {
 	background-size:cover;
     height: 100%;
     left: 0;
@@ -459,37 +458,42 @@ p {
     top: 0;
     width: 100%;
     z-index: -1;
+}
+
+/* Spring Abstract */
+.parallax-bg {
+    background: url('../images/spring-abstract/bg.png') center;
 }
 .parallax-layer1 {
-    background: url('../images/in-the-depths/layer1.png') center;
-	background-size:cover;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+    background: url('../images/spring-abstract/layer1.png') center;
+	z-index:1;
 }
 .parallax-layer2 {
-    background: url('../images/in-the-depths/layer2.png') center;
-	background-size:cover;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+    background: url('../images/spring-abstract/layer2.png') center;
+	z-index:2;
 }
 .parallax-layer3 {
-    background: url('../images/in-the-depths/layer3.png') center;
-	background-size:cover;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+    background: url('../images/spring-abstract/layer3.png') center;
+	z-index:3;
 }
+
+/* In the Depths */
+.parallax-bg {
+    background: url('../images/in-the-depths/low-res/bg.png') center;
+}
+.parallax-layer1 {
+    background: url('../images/in-the-depths/low-res/layer1.png') center;
+	z-index:1;
+}
+.parallax-layer2 {
+    background: url('../images/in-the-depths/low-res/layer2.png') center;
+	z-index:2;
+}
+.parallax-layer3 {
+    background: url('../images/in-the-depths/low-res/layer3.png') center;
+	z-index:3;
+}
+
 
 .scene,
 .layer {

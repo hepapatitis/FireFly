@@ -89,12 +89,13 @@ $(window).load(function() {
 /*	7.	Firefly
 /*----------------------------------------------------------------------------*/	
 	$.firefly({
-		images : ['images/fly1by1.png', 'images/fly2by2.png', 'images/fly3by3.png'],
+		images : ['images/in-the-depths/fly1by1.png', 'images/in-the-depths/fly2by2.png', 'images/in-the-depths/fly3by3.png'],
 		total : 60,
 		on: '.parallax-bg'
 	});
 	
 	// Parallax
-	$('#scene').parallax();
+	var $scene = $('#scene');
+	$scene.parallax();
 });
 
