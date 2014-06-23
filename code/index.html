@@ -5,9 +5,9 @@
 <head>
 	<!-- Basic Info -->
 	<meta charset="utf-8">
-	<title>Alecto HTML5, CSS3, responsive comming soon template</title>
-	<meta name="description" content="Alecto is a one page comming soon template using , HTML5, CSS3 and PHP">
-	<meta name="author" content="Martin Tokarski">
+	<title>FireFly - Parallax Responsive Comming Soon Template</title>
+	<meta name="description" content="Parallax is a one page comming soon template using Parallax, HTML5, CSS3 and PHP">
+	<meta name="author" content="Memories Dust">
 	<!-- Mobile  -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Font -->
@@ -26,11 +26,11 @@
 			
 			<!-- Header -->
 			<header id="header"> 
-				<div id="logo"> <a href="#">Alecto Cooming Soon</a></div>
+				<div id="logo"><a href="#">FireFly Cooming Soon</a></div>
 			</header>
 			
 			<!-- Modal Open -->
-			<a  id="modal-open"><i class="fa fa-plus"></i></a>
+			<a id="modal-open"><i class="fa fa-bars"></i></a>
 
 			<!-- Main Title -->
 			<h1>We are under construction and will be back soon!</h1>
@@ -73,11 +73,8 @@
 			<div class="one">
 				<h2>Boreiusam, oditatur as siminci dendis nulloritio dolut ea 
 					volupta spelit quo cone quaspelitat lam - Ferecuptatur sim</h2>
-				<a id="modal-close" href="#"><i class="fa fa-minus"></i></a>
-			</div>
-
-			<div class="one-half">
-				<h3>About</h3>
+				<a id="modal-close" href="#"><i class="fa fa-home"></i></a>
+				
 				<p>
 					Solore simaximus, od quis dolorrovid que nonsed minia 
 					net ut ipsum facerior aperrovitati doluptate offici qui 
@@ -85,37 +82,62 @@
 					oremquu ndicto illor rem. Antibus ciaesti omni ut qui de
 					voluptae. Sum quist aci officiis simmnient eos dolectem.
 				</p>
+			</div>
 
-				<h3>Some kind of list</h3>
+			<div class="one-half">
+				<h3>First List</h3>
 				<ul>
 					<li><i class="fa fa-download"></i>Aci officiis simmnient</li>
 					<li><i class="fa fa-check"></i>Antibus ciaesti omni</li>
 					<li><i class="fa fa-css3"></i>Cust sin resedis</li>
-					<li><i class="fa fa-html5"></i>Doluptate offici</li>
-					<li><i class="fa fa-phone"></i>Facerior aperrovitati</li>
 				</ul>
 			</div>
 
 			<div class="one-half">
-				<h3>Jojn For Free</h3>
-				<p>
-					Ihitias remolup icimincia quiam, aut que magnis aut 
-					velique nat quatur, ut debisqui ut quasperum et, 
-					unt optatet ium libuscidenis verepra sum am, 
-					sequunturiae eos et ad untusdam cum erum repero 
-					ommolup tationsed que nisquam, venim aute dolorum 
-					qui blaborp.
-				</p>
-				<h3>Address</h3>
-				<p>27st Avenue, <br />
-					Manhattan, <br />
-					New York, NY
-				</p>
+				<h3>Second List</h3>
 				<ul>
-					<li><i class="fa fa-phone"></i>(000) 123 4567</li>
-					<li><i class="fa fa-print"></i>(111) 123 4567</li>
-					<li><i class="fa fa-envelope"></i>mail@companyname.com</li>
+					<li><i class="fa fa-html5"></i>Doluptate offici</li>
+					<li><i class="fa fa-phone"></i>Facerior aperrovitati</li>
+					<li><i class="fa fa-envelope"></i>Aci officiis simmnient</li>
 				</ul>
+			</div>
+			
+			<div class="one">
+				<h2>Contact Us</h2>
+				<p>Ut eu nisl ut purus sodales suscipit sit amet non elit. Pellentesque viverra fringilla purus ut pretium. Morbi sit amet nunc sed nibh lobortis posuere condimentum nec urna. Praesent tincidunt dictum porttitor. Cras et purus sed ipsum ullamcorper tristique.</p>
+			</div>
+			
+			<div class="one-third">
+				<div class="widget-contact">
+					<span class="big-icon"><i class="fa fa-envelope"></i></span>
+					<h3>Write Us</h3>
+					<a href="javascript:void(0)">yourmail@yourmail.com</a>
+				</div>
+			</div>
+			
+			<div class="one-third">
+				<div class="widget-contact">
+					<span class="big-icon"><i class="fa fa-phone"></i></span>
+					<h3>Call Us</h3>
+					<a href="javascript:void(0)">+1 (234) 567 8900</a>
+				</div>
+			</div>
+			
+			<div class="one-third">
+				<div class="widget-contact">
+					<span class="big-icon"><i class="fa fa-map-marker"></i></span>
+					<h3>Locate Us</h3>
+					<a href="javascript:void(0)">2/820 Main Street, Melbourne</a>
+				</div>
+			</div>
+			
+			<div id="contact-form" class="one">
+				<form method="post" action="php/contact.php" name="contactform" id="contactform">
+					<input name="name" type="text" id="name" onfocus="if(this.value == 'Name') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Name'; }" value="Name">
+					<input name="email" type="text" id="email" onfocus="if(this.value == 'E-mail') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'E-mail'; }" value="E-mail">            
+					<textarea name="comments" id="comments" onfocus="if(this.value == 'Message') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Message'; }">Message</textarea>
+					<input type="submit" class="send_message transition" id="submit" value="Send Message">
+				</form>
 			</div>
 		</div>
 	</div>
@@ -131,9 +153,9 @@
 	 <!-- Background overlay -->
 	<ul id="scene" class="scene unselectable">
 		<li class="layer"><div class="parallax-part parallax-bg"></div></li>
-		<li class="layer" data-depth="0.06"><div class="parallax-part parallax-layer3"></div></li>
-		<li class="layer" data-depth="0.12"><div class="parallax-part parallax-layer2"></div></li>
-		<li class="layer" data-depth="0.18"><div class="parallax-part parallax-layer1"></div></li>
+		<li class="layer" data-depth="0.07"><div class="parallax-part parallax-layer3"></div></li>
+		<li class="layer" data-depth="0.14"><div class="parallax-part parallax-layer2"></div></li>
+		<li class="layer" data-depth="0.21"><div class="parallax-part parallax-layer1"></div></li>
 	</ul>
 
 	<!-- Included JS Files -->

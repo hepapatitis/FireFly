@@ -27,7 +27,7 @@ $(window).load(function() {
 /*----------------------------------------------------------------------------*/
 /*	3.	Clock Setup
 /*----------------------------------------------------------------------------*/
-    $('#clock').countdown('2014/12/31', function(event) {
+    $('#clock').countdown('2014/12/01', function(event) {
         $(this).html(event.strftime(''
                 + '<div class="clock-section"><span>%D</span> <p>days</p></div> '
                 + '<div class="clock-section"><span>%H</span> <p>hours</p></div> '
@@ -90,7 +90,7 @@ $(window).load(function() {
 /*----------------------------------------------------------------------------*/	
 	$.firefly({
 		images : ['images/in-the-depths/fly1by1.png', 'images/in-the-depths/fly2by2.png', 'images/in-the-depths/fly3by3.png'],
-		total : 60,
+		total : 30,
 		on: '.parallax-bg'
 	});
 	

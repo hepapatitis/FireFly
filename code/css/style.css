@@ -112,6 +112,15 @@ p {
     margin-bottom: 20px;
 }
 
+input, textarea, select {
+	font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /*----------------------------------------------------------------------------*/
 /*	4.	Timer
 /*----------------------------------------------------------------------------*/
@@ -150,21 +159,32 @@ p {
 /*	5.	Modal 
 /*----------------------------------------------------------------------------*/
 
-#modal-open i{
-    background: #fff;
-    color: #262624;
-    font-size: 14px;
-    padding: 14px;
-    margin-bottom: 40px;
+#modal-open i,
+#modal-close i {
+	-webkit-border-bottom-right-radius: 50px;
+	-webkit-border-bottom-left-radius: 50px;
+	-moz-border-radius-bottomright: 50px;
+	-moz-border-radius-bottomleft: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin:-5px 0 40px -17px;
     text-align: center;
-    border-radius: 2px; 
-    -moz-border-radius: 2px; 
-    -webkit-border-radius: 2px;
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     -o-transition: all .2s linear;
     -ms-transition: all .2s linear;
     transition: all .2s linear;
+    font-size: 14px;
+    padding: 14px;
+	width:34px;
+}
+
+#modal-open i{
+    background: #fff;
+    color: #262624;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -173,26 +193,18 @@ p {
     color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 	cursor:pointer;
+	margin-top:0px;
 }
 
 #modal-close i{
-    font-size: 14px;
     background: #fff;
-    padding: 14px;
     color: #262624;
-    text-align: center;
-    border-radius: 2px;
-    margin-bottom: 40px;
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    -ms-transition: all .2s linear;
-    transition: all .2s linear;
 }
 
 #modal-close i:hover{
     color: #fff;
     background: #ff4136;
+	margin-top:0px;
 }
 
 #modal {
@@ -202,8 +214,7 @@ p {
     right: 0;
     top: 0;
     z-index: 997;
-    background: #000;
-	background: rgba(0,0,0,0.85);
+    background: #222530;
     display: none;
 }
 
@@ -224,7 +235,26 @@ p {
     float: left;
     text-align: left;
     width: 47%;
-    margin-right: 3%;
+    margin: 0 1.5%;
+}
+
+#modal .container .one-third{
+    float: left;
+    text-align: left;
+    width: 30.3%;
+    margin: 0 1.5%;
+}
+
+#modal .container .one-third:first-child{
+    margin: 0 1.5%;
+}
+
+#modal .widget-contact {
+	text-align:center;
+}
+
+#modal .big-icon {
+	font-size:3em;
 }
 
 #modal .container h2{
@@ -248,7 +278,7 @@ p {
 }
 
 #modal .container p{
-    color: #f3f3f3;
+    color: #828C99;
     margin-bottom:40px;
     letter-spacing: 0px;
 }
@@ -264,10 +294,81 @@ p {
 
 #modal .container ul li i{
     margin-right:8px; 
-    color: #ff4136;
     min-width: 16px;
 }
 
+#modal #contact-form {
+	text-align: center!important;
+	width: 100%;
+	margin: 35px auto;
+}
+
+#modal #contact-form input[type="text"],
+#modal #contact-form input[type="email"],
+#modal #contact-form input[type="date"],
+#modal #contact-form textarea {
+	font-size: 15px;
+	height: 40px;
+	line-height: 20px;
+	width: 100%;
+	padding: 14px 18px;
+	background: #272E3C;
+	color: #87898f;
+	margin-bottom: 20px;
+	border: 0;
+	-webkit-appearance: none;
+	border-radius: 2px;
+	display:block;
+	overflow:auto;
+	-webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+#modal #contact-form input[type="text"]:focus,
+#modal #contact-form input[type="email"]:focus,
+#modal #contact-form input[type="date"]:focus,
+#modal #contact-form textarea:focus {
+	background-color: #3d4350;
+}
+
+#modal #contact-form textarea {
+	padding-top: 10px;
+	height: 160px;
+	resize: none;
+}
+
+#modal #contact-form button,
+#modal #contact-form input[type="submit"],
+#modal #contact-form input[type="button"] {
+	width:100%;
+	color: #fff;
+	font-size: 12px;
+	background: #3d4350;
+	border: 0;
+	text-transform: uppercase;
+	padding: 14px 18px;
+	letter-spacing: 0;
+	line-height: 14px;
+	cursor: pointer;
+	text-align: center;
+	-webkit-appearance: none;
+	border-radius: 2px;
+	-webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+#modal #contact-form button:hover,
+#modal #contact-form input[type="submit"]:hover,
+#modal #contact-form input[type="button"]:hover {
+	background:#fff;
+	color:#555;
+}
 /*----------------------------------------------------------------------------*/
 /*	6.	Newsletter
 /*----------------------------------------------------------------------------*/
@@ -283,18 +384,17 @@ p {
     width: 500px;
 }
 
-#newsletter input, textarea, select { 
+#newsletter input,
+#newsletter textarea,
+#newsletter select { 
     float: left;
     height: 54px;
-    width: 320px;
+    width: 360px;
     padding: 0px 20px;
     background: #222;
 	background:rgba(0,0,0,0.55);
     border: none;
     color: #939898;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
     -webkit-border-top-left-radius: 2px;
     -moz-border-radius-topleft: 2px;
     border-top-left-radius: 2px;
@@ -309,12 +409,16 @@ p {
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-#newsletter input:hover, textarea:hover, select:hover {
+#newsletter input:hover,
+#newsletter textarea:hover,
+#newsletter select:hover {
 	background: #2a2a2a;
 	background:rgba(0,0,0,0.7);
 	color:#f5f5f5;
 }
-#newsletter input:focus, textarea:focus, select:focus { 
+#newsletter input:focus,
+#newsletter textarea:focus,
+#newsletter select:focus { 
     background: #f7f6f6;
 	color: #939898;
 }
@@ -441,7 +545,6 @@ p {
 .body-bg {
     /*background: rgba(15,15,15,0.85);*/
     background: url('../images/in-the-depths.jpg') center;
-	background-size:cover;
     height: 100%;
     left: 0;
     position: fixed;
@@ -557,7 +660,7 @@ p {
     }
 
     #newsletter input, textarea, select { 
-        width: 240px;
+        width: 280px;
     }
 
     #newsletter input.submit { 
@@ -597,7 +700,7 @@ p {
     }
 
     #newsletter input, textarea, select { 
-        width: 150px;
+        width: 190px;
     }
 
     #newsletter input.submit { 
