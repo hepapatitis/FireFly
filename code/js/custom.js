@@ -3,7 +3,7 @@
         1.	Loader
         2.	Placeholder plugin
         3.	Clock Setup
-        4.	Background Slider
+        4.	Background Slider / Parallax
         5.	Validate Form
         6.	Modal Window
 		7.	FireFly
@@ -36,29 +36,36 @@ $(window).load(function() {
     });
 
 /*----------------------------------------------------------------------------*/
-/*	4.	Background Slider
+/*	4.	Background Slider / Parallax
 /*----------------------------------------------------------------------------*/
     $.backstretch([
-        'img/background-01.jpg'
+        'images/background-01.jpg'
     ]);
-
+	
+	// Parallax
+	var $scene = $('#scene');
+	$scene.parallax();
+	
 /*----------------------------------------------------------------------------*/
 /*	5.	Validate Fotm
 /*----------------------------------------------------------------------------*/
-    $('#contactform').submit(function() {
- 
+    $('form#contactform').submit(function(e) {
+		e.preventDefault();
         var action = $(this).attr('action');
 
-        $("#message").fadeIn("100", function() {
-            $('#message').hide();
-
+        $("#contact-form-message").fadeIn("100", function() {
+            $('#contact-form-message').hide();
+			
             $.post(action, {
-                email: $('#email').val()
+                name: $('#contact-name').val(),
+                email: $('#contact-email').val(),
+                comments: $('#contact-comments').val()
             },
-                    function(data) {
-                        document.getElementById('message').innerHTML = data;
-                        $('#message').fadeIn("100");
-                    }
+				function(data) {
+					$('#contact-form-message').html(data);
+					$('#contact-form-message').fadeIn("100");
+					console.log(data);
+				}
             );
         });
         return false;
@@ -93,9 +100,5 @@ $(window).load(function() {
 		total : 30,
 		on: '.parallax-bg'
 	});
-	
-	// Parallax
-	var $scene = $('#scene');
-	$scene.parallax();
 });
 

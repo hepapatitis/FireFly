@@ -5,8 +5,8 @@
 <head>
 	<!-- Basic Info -->
 	<meta charset="utf-8">
-	<title>FireFly - Parallax Responsive Comming Soon Template</title>
-	<meta name="description" content="Parallax is a one page comming soon template using Parallax, HTML5, CSS3 and PHP">
+	<title>Firely - Parallax Responsive Comming Soon Template</title>
+	<meta name="description" content="Firely is a one page comming soon template using Parallax, HTML5, CSS3 and PHP">
 	<meta name="author" content="Memories Dust">
 	<!-- Mobile  -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -26,31 +26,29 @@
 			
 			<!-- Header -->
 			<header id="header"> 
-				<div id="logo"><a href="#">FireFly Cooming Soon</a></div>
+				<div id="logo"><a href="#">Firely Cooming Soon</a></div>
 			</header>
 			
 			<!-- Modal Open -->
 			<a id="modal-open"><i class="fa fa-bars"></i></a>
 
 			<!-- Main Title -->
-			<h1>We are under construction and will be back soon!</h1>
+			<h1>We will be back soon with awesomeness!</h1>
 			
 			<!-- Timer -->
 			<div id="clock"></div>   
 
 			<!-- Newsletter -->
 			<div id="newsletter">
-				<p>Freebies, useful tips, tutorials and a handful of premium wordpress themes. <br />
-					All this will be available soon. Notify me when it's ready:</p>
+				<p>Meanwhile, why not subscribe and receive the latest tutorials, tips &amp; tricks from us?<br />
+					Don't worry, it's <strong>spam free</strong>!</p>
 
-				<form method="post" action="contact.php" name="contactform" id="contactform">
+				<form method="post" action="javascript:void(0)" name="newsletterform" id="newsletterform">
 					<fieldset>
 						<input name="email" type="text" id="email" placeholder="Please enter your email" />
 						<input type="submit" class="submit" id="submit" value="Notify Me" />
 					</fieldset>
 				</form>
-
-				<div id="message"></div>
 
 			</div>
 
@@ -71,16 +69,11 @@
 	<div id="modal">
 		<div class="container">
 			<div class="one">
-				<h2>Boreiusam, oditatur as siminci dendis nulloritio dolut ea 
-					volupta spelit quo cone quaspelitat lam - Ferecuptatur sim</h2>
+				<h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</h2>
 				<a id="modal-close" href="#"><i class="fa fa-home"></i></a>
 				
 				<p>
-					Solore simaximus, od quis dolorrovid que nonsed minia 
-					net ut ipsum facerior aperrovitati doluptate offici qui 
-					cust, sin resedis imilia venit aut voluptatque magnimp 
-					oremquu ndicto illor rem. Antibus ciaesti omni ut qui de
-					voluptae. Sum quist aci officiis simmnient eos dolectem.
+					Etiam pellentesque malesuada nisl, in scelerisque magna cursus at. In dictum orci porttitor sem adipiscing, ut luctus mauris commodo. Nunc pulvinar dolor felis, sit amet tristique lacus vulputate ac. Pellentesque molestie nulla quis faucibus dictum. In non lectus ut diam euismod fringilla eget sed sapien.
 				</p>
 			</div>
 
@@ -104,7 +97,7 @@
 			
 			<div class="one">
 				<h2>Contact Us</h2>
-				<p>Ut eu nisl ut purus sodales suscipit sit amet non elit. Pellentesque viverra fringilla purus ut pretium. Morbi sit amet nunc sed nibh lobortis posuere condimentum nec urna. Praesent tincidunt dictum porttitor. Cras et purus sed ipsum ullamcorper tristique.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere nibh vel lacus faucibus dignissim. Mauris at convallis sem, in suscipit nulla. Phasellus fermentum risus eu est dapibus, in tempor est faucibus.</p>
 			</div>
 			
 			<div class="one-third">
@@ -132,10 +125,11 @@
 			</div>
 			
 			<div id="contact-form" class="one">
-				<form method="post" action="php/contact.php" name="contactform" id="contactform">
-					<input name="name" type="text" id="name" onfocus="if(this.value == 'Name') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Name'; }" value="Name">
-					<input name="email" type="text" id="email" onfocus="if(this.value == 'E-mail') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'E-mail'; }" value="E-mail">            
-					<textarea name="comments" id="comments" onfocus="if(this.value == 'Message') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Message'; }">Message</textarea>
+				<div id="contact-form-message"></div>
+				<form method="post" action="send-email.php" name="contactform" id="contactform">
+					<input name="contact-name" type="text" id="contact-name" onfocus="if(this.value == 'Name') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Name'; }" value="Name">
+					<input name="contact-email" type="text" id="contact-email" onfocus="if(this.value == 'E-mail') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'E-mail'; }" value="E-mail">            
+					<textarea name="contact-comments" id="contact-comments" onfocus="if(this.value == 'Message') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Message'; }">Message</textarea>
 					<input type="submit" class="send_message transition" id="submit" value="Send Message">
 				</form>
 			</div>
@@ -163,6 +157,7 @@
 	<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
 	<script type="text/javascript" src="js/jquery-firefly-0.2.js"></script>
 	<script type="text/javascript" src="js/jquery.parallax.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 </body>

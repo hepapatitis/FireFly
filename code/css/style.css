@@ -1,10 +1,8 @@
-﻿
-/*------------------------------------------------------------------------------
+﻿/*------------------------------------------------------------------------------
 
-        Theme Name: Alecto
-        Description: Alecto HTML5, CSS3, responsive comming soon template
-        Author: Martin Tokarski
-        Author URI: 
+        Theme Name: Firely
+        Description: Firely Parallax, HTML5, CSS3, responsive comming soon template
+        Author: Memories Dust
         Version: 1.0
         License: GNU General Public License version 3.0
         License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -20,7 +18,7 @@
         6.	Newsletter
         7.	Social Icons
         8.	Preload
-        9.	Background Image
+        9.	Background Image & Parallax
         10.	Responsive
 
 /*----------------------------------------------------------------------------*/
@@ -77,7 +75,7 @@ a:hover {
 #logo {
     background: url("../images/logo.png") no-repeat center;
     text-indent: -9999px; 
-    height: 60px;                        
+    height: 100px;                        
     width: auto;
     white-space: nowrap; 
 }
@@ -110,6 +108,14 @@ p {
     color: #fff;
     line-height: 1.5;
     margin-bottom: 20px;
+}
+
+h2, h3, h4, h5, h6 {
+	font-weight:normal;
+}
+
+strong, b {
+	font-weight:normal;
 }
 
 input, textarea, select {
@@ -170,7 +176,7 @@ input, textarea, select {
 	position:absolute;
 	top:0;
 	left:50%;
-	margin:-5px 0 40px -17px;
+	margin:-5px 0 40px -24px;
     text-align: center;
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
@@ -269,7 +275,6 @@ input, textarea, select {
 #modal .container h3{
     width: 100%;
     font-size: 14px;
-    font-weight: 700;
     color: #fff;
     text-transform: uppercase;
     line-height: 1.11111;
@@ -668,7 +673,8 @@ input, textarea, select {
     }
 
     #modal .container {
-        width: 480px;
+        width: 95%;
+		margin: auto 2.5%;
     }
 
 }
@@ -708,11 +714,17 @@ input, textarea, select {
     }
 
     #modal .container {
-        width: 340px;
+        width: 95%;
+		margin: auto 2.5%;
     }
 
     #modal .container .one-half{
         width: 100%;
+    }
+	
+	#modal .container .one-third{
+        width: 100%;
+		margin:8px auto 10px;
     }
 
     #message{ 
