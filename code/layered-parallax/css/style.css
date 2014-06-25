@@ -550,16 +550,17 @@ input, textarea, select {
 .body-bg {
     /*background: rgba(15,15,15,0.85);*/
     background: url('../images/in-the-depths.jpg') center;
+	background-size:cover;
     height: 100%;
     left: 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: -1;
 }
 
 .parallax-part {
-	background-size:cover;
+	background-size:cover !important;
     height: 100%;
     left: 0;
     position: absolute;
@@ -606,8 +607,8 @@ input, textarea, select {
 .scene,
 .layer {
   display: block;
-  height: 100%;
-  width: 100%;
+  height: 110%;
+  width: 110%;
   padding: 0;
   margin: 0;
 }
@@ -616,8 +617,10 @@ input, textarea, select {
   min-height: 460px;
   position: fixed;
   overflow: hidden;
-  top:0;
-  left:0;
+  top:-50px;
+  bottom:50px;
+  right:50px;
+  left:-50px;
   z-index:-1;
 }
 
