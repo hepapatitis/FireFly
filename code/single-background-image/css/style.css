@@ -213,6 +213,13 @@ input, textarea, select {
 	margin-top:0px;
 }
 
+#modal-window {
+	position: absolute;
+	top:0;
+	right:0;
+    left: 0;
+}
+
 #modal {
     left: 0;
     min-height: 100%;
