@@ -40,10 +40,10 @@ $(window).load(function() {
 /*	4.	Background Slider / Parallax
 /*----------------------------------------------------------------------------*/	
 	// Parallax
-	var $scene = $('#scene');
-	$scene.parallax();
+	//var $scene = $('#scene');
+	//$scene.parallax();
 	
-    $(".player").mb_YTPlayer();
+	jQuery("#bgndVideo").mb_YTPlayer();
     
 	
 /*----------------------------------------------------------------------------*/

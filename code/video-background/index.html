@@ -13,6 +13,7 @@
 	<!-- Font -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:500,500italic,100,100italic,300,300italic' rel='stylesheet' type='text/css'>
 	<!-- CSS -->
+	<link rel="stylesheet" href="css/YTPlayer.css" />
 	<link rel="stylesheet" href="css/font-awesome.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
@@ -148,13 +149,8 @@
 		</div>
 	</div>
 	
-	 <!-- Background overlay -->
-	<ul id="scene" class="scene unselectable">
-		<li class="layer" data-depth="0.07">
-			<a id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/BsekcY04xvQ',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}">My video</a>
-		</li>
-	</ul>
-
+	<a id="bgndVideo" data-property="{videoURL:'https://www.youtube.com/watch?v=alZ9hvgfIk4',containment:'body',autoPlay:true, mute:true, startAt:0,opacity:1,ratio:'4/3', addRaster:true}">My video</a>
+	
 	<!-- Included JS Files -->
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
