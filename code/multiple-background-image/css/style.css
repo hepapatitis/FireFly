@@ -176,7 +176,7 @@ input, textarea, select {
 	position:absolute;
 	top:0;
 	left:50%;
-	margin:-5px 0 40px -24px;
+	margin:-5px 0 40px -27px;
     text-align: center;
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
@@ -184,8 +184,8 @@ input, textarea, select {
     -ms-transition: all .2s linear;
     transition: all .2s linear;
     font-size: 14px;
-    padding: 14px;
-	width:34px;
+    padding: 14px 0;
+	width:54px;
 }
 
 #modal-open i{
@@ -381,6 +381,16 @@ input, textarea, select {
 	background:#fff;
 	color:#555;
 }
+
+#modal #contact-form-message {
+	display:none;
+	padding: 10px;
+	margin: 10px 0;
+	background: #1D2029;
+	border-left: 3px solid #f0f0f0;
+}
+
+
 /*----------------------------------------------------------------------------*/
 /*	6.	Newsletter
 /*----------------------------------------------------------------------------*/

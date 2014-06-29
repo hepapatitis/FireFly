@@ -44,7 +44,7 @@ $(window).load(function() {
 	$scene.parallax();
 	
 /*----------------------------------------------------------------------------*/
-/*	5.	Validate Fotm
+/*	5.	Validate Form
 /*----------------------------------------------------------------------------*/
     $('form#contactform').submit(function(e) {
 		e.preventDefault();
