@@ -608,18 +608,18 @@ input, textarea, select {
 
 /* In the Depths */
 .parallax-bg {
-    background: url('../images/in-the-depths/low-res/bg.png') center;
+    background: url('../images/in-the-depths/bg.png') center;
 }
 .parallax-layer1 {
-    background: url('../images/in-the-depths/low-res/layer1.png') center;
+    background: url('../images/in-the-depths/layer1.png') center;
 	z-index:1;
 }
 .parallax-layer2 {
-    background: url('../images/in-the-depths/low-res/layer2.png') center;
+    background: url('../images/in-the-depths/layer2.png') center;
 	z-index:2;
 }
 .parallax-layer3 {
-    background: url('../images/in-the-depths/low-res/layer3.png') center;
+    background: url('../images/in-the-depths/layer3.png') center;
 	z-index:3;
 }
 
