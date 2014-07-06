@@ -1,0 +1,14 @@
+Firely is a creative and easy way to show users that your site is under construction. It’s easy to use packed with a stylish countdown to show how many time is letf to put your site online. With parallax and FireFly effects, Firely will attract your user to pay attention to your coming soon site.
+
+All the HTML, CSS, JavaScript, PHP code are well organized and commented to make any change easy to do without any problems.
+
+Features of Firely Coming Soon Template
+HTML5 & CSS3
+Fully Responsive
+Tested in major smartphones
+Options of Layered Parallax, Video, Single Image, or Multiple Image Backgrounds
+FireFly effect
+AJAX PHP Contact Form
+Font Awesome Icons
+Simple Grab and use
+Commented Scripts

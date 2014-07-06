@@ -6,8 +6,6 @@
 	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
 	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
 	
-	<link rel="shortcut icon" href="assets/images/favicon.ico">
-	
 	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
 	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
 	<style type="text/css" media="screen">
@@ -291,6 +289,20 @@
 		
 		<h4><strong>The video background is not displaying anything. What should I do?</strong></h4>
 		<p>Video Background will work when it's opened from a webserver (in this case, your webhosting), not your local machine. You can use XAMPP to create a local webserver.</p>
+		
+		<h4><strong>How do I change FireFly images or total number of FireFly?</strong></h4>
+		<p>FireFly uses PNG image which can be found in <strong>js/main.js</strong>. Below is the sneak peek of <strong>main.js</strong> for FireFly.</p>
+<pre class="brush: js">
+/*----------------------------------------------------------------------------*/
+/*	7.	Firefly
+/*----------------------------------------------------------------------------*/	
+	$.firefly({
+		images : ['images/in-the-depths/fly1by1.png', 'images/in-the-depths/fly2by2.png', 'images/in-the-depths/fly3by3.png'],
+		total : 30,
+		on: '.parallax-bg'
+	});
+</pre>
+		<p>To change the FireFly picture, simply change the images with the image that you desire.<br /> To change the total number of FireFly, simply change the <strong>total</strong> value.</p>
 		<hr>
 		
 		<h3 id="credits"><strong>G) Sources and Credits</strong> - <a href="#toc">top</a></h3>
