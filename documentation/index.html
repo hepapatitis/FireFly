@@ -22,7 +22,7 @@
 <body>
 	<div class="container">
 	
-		<h3 class="center alt">&ldquo;Firely Parallax Responsive Coming Soon Template&rdquo; Documentation v1.0</h3>
+		<h3 class="center alt">&ldquo;Firely Parallax Responsive Coming Soon Template&rdquo; Documentation v1.1</h3>
 		
 		<hr>
 		
@@ -40,7 +40,7 @@
 			</div><!-- end div .span-6 -->		
 	
 			<div class="span-12 last">
-				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/hepapatitis">here</a>. Thanks so much!</p>
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email me at <a href="mailto:support@memoriesdust.com?subject=Firely Theme Support">support@memoriesdust.com</a>. Thanks so much!</p>
 			</div>
 		</div><!-- end div .borderTop -->
 		
@@ -77,7 +77,7 @@
 		</ul>
 		<p>The coming soon template has been managed with different folders based on the styles. Therefore you can grab any folder and use it immediately.</p>
 		
-		<h4>General HTML structure</h4>
+		<h4>Non-Bootstrap General HTML structure</h4>
 		<p>The general template structure is the same for every folder. Here is the general structure.</p>
 		
 		
@@ -86,6 +86,73 @@
 <div id="modal-window">
 
 	<div class="container">
+	
+		<!-- Header & Logo -->
+		<header id="header"> 
+			<div id="logo"><a href="#">Firely Cooming Soon</a></div>
+		</header>
+
+		<!-- Modal Open -->
+		<a id="modal-open"><i class="fa fa-bars"></i></a>
+		
+		<!-- Main Title (Rotating Title -->
+		<div id="rotate">
+			<div class="rotate"><h1>Title #1 here</h1></div>
+			<div class="rotate"><h1>Title #2 here</h1></div>
+			<div class="rotate"><h1>Title #3 here</h1></div>
+		</div>
+
+		<!-- Timer -->
+		<div id="clock"></div>  
+		
+		<!-- Newsletter -->
+		<div id="newsletter">
+			...
+		</div>
+		
+		<!-- Social Links -->
+		<div class="social">
+			...
+		</div>
+	
+	</div>
+	
+</div>
+
+<!-- Modal Window -->
+<div id="modal">
+	<div class="container">
+		
+		...
+		
+		<!-- Contact Form -->
+		<div id="contact-form" class="one">
+			...
+		</div>
+	</div>
+</div>
+
+<!-- Preload -->
+<div id="preload">
+	...
+</div>
+
+<!-- Background overlay -->
+<ul id="scene" class="scene unselectable">
+	...
+</ul>
+
+</pre>
+		
+		<h4>Bootstrap General HTML structure</h4>
+		<p>The general template structure is the same for every folder. Here is the general structure.</p>
+		
+		
+<pre class="brush: html">
+<!-- Beginning -->
+<div id="modal-window">
+
+	<div class="cs-container">
 	
 		<!-- Header & Logo -->
 		<header id="header"> 
@@ -157,9 +224,12 @@
 <link rel="stylesheet" href="css/style.css" />
 </pre>
 
-		<p>There is only one main CSS file in this theme. The CSS file includes CSS Reset by meyer. Please use custom.css to override the existing CSS file.</p>
+		<p>There is only one main CSS file in this theme. Please use custom.css to override the existing CSS file.</p>
 
 		<p>Lets take a look closely at our stylesheet files.</p>
+		
+		<h5>bootstrap.min.css <small style="color:gray">(Bootstrap ONLY)</small></h5>
+		<p>Base styles for Bootstrap 3.2.0.</p>
 		
 		<h5>font-awesome.min.css</h5>
 		<p>Base styles for FontAwesome icon fonts.</p>
@@ -167,7 +237,7 @@
 		<h5>style.css</h5>
 		<p>Main CSS that includes Reset CSS by Meyer.</p>
 		
-		<h5>YTPlayer.css</h5>
+		<h5>YTPlayer.css <small style="color:gray">(Video Background ONLY)</small></h5>
 		<p>CSS file for YTPlayer that is only used for <strong>Video Background</strong> style. Be sure to include this file when using Video Background.</p>
 		
 		<h5>custom.css</h5>
@@ -212,6 +282,9 @@
 		<h5>jquery-1.11.0.min.js</h5>
 		<p><a href="http://jquery.com/">jQuery</a> is a multi-browser JavaScript library designed to simplify the client-side scripting of HTML.</p>
 		
+		<h5>bootstrap.min.js <small style="color:gray">(Bootstrap ONLY)</small></h5>
+		<p>Base javascript for Bootstrap 3.2.0.</p>
+		
 		<h5>jquery-firefly-0.2.js</h5>
 		<p>jQuery plug-in to create a firefly effect. <a href="https://github.com/motyar/firefly">Visit Website</a></p>
 		
@@ -224,7 +297,7 @@
 		<h5>jquery.placeholder.min.js</h5>
 		<p>A jQuery plugin that enables HTML5 placeholder behavior for browsers that aren’t trying hard enough yet <a href="https://github.com/mathiasbynens/jquery-placeholder">Visit Website</a></p>
 		
-		<h5>jquery.mb.YTPlayer.js</h5>
+		<h5>jquery.mb.YTPlayer.js <small style="color:gray">(Video Background ONLY)</small></h5>
 		<p>An open source jQuery component to easily build your custom Youtube® player or to use a Youtube® video as background for your page. <a href="https://github.com/pupunzi/jquery.mb.YTPlayer">Visit Website</a></p>
 		
 		<h5>rotator.js</h5>
@@ -308,6 +381,7 @@
 		<h3 id="credits"><strong>G) Sources and Credits</strong> - <a href="#toc">top</a></h3>
 		
 		<ul>
+			<li><a href="http://getbootstrap.com/">Bootstrap</a></li>
 			<li><a href="http://meyerweb.com/eric/tools/css/reset/">CSS Reset by Meyer</a></li>
 			<li><a href="http://jquery.com/">jQuery</a></li>
 			<li><a href="http://fortawesome.github.com/Font-Awesome/">FontAwesome</a></li>
