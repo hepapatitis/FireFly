@@ -506,6 +506,10 @@ input, textarea, select {
 /*	7.	Social Icons
 /*----------------------------------------------------------------------------*/
 
+.social ul {
+	padding-left:0;
+}
+
 .social ul li{
     display: inline-block;
 }
@@ -764,5 +768,11 @@ input, textarea, select {
         margin-top: 18px;
         font-size: 12px;
     }
+
+	.scene,
+	.layer {
+	  height: 120%;
+	  width: 120%;
+	}
 
 }

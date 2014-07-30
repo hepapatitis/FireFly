@@ -473,6 +473,10 @@ input, textarea, select {
 /*	7.	Social Icons
 /*----------------------------------------------------------------------------*/
 
+.social ul {
+	padding-left:0;
+}
+
 .social ul li{
     display: inline-block;
 }
@@ -702,21 +706,7 @@ input, textarea, select {
     #newsletter input.submit { 
         width: 95px;
     }
-
-    #modal .container {
-        width: 95%;
-		margin: auto 2.5%;
-    }
-
-    #modal .container .one-half{
-        width: 100%;
-    }
 	
-	#modal .container .one-third{
-        width: 100%;
-		margin:8px auto 10px;
-    }
-
     #message{ 
         width: 400px;
         margin-left: -200px;
